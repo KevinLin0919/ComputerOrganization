@@ -40,6 +40,7 @@
 
 from m5.defines import buildEnv
 from m5.objects import *
+from m5.objects import FrequencyRP
 
 # Base implementations of L1, L2, IO and TLB-walker caches. There are
 # used in the regressions and also as base components in the
@@ -81,6 +82,7 @@ class L3Cache(Cache):
     mshrs            = 16
     tgts_per_mshr    = 12
     write_buffers    = 16
+    replacement_policy = FrequencyRP()
 
 class IOCache(Cache):
     assoc = 8
