@@ -81,6 +81,7 @@ class L3Cache(Cache):
     mshrs            = 16
     tgts_per_mshr    = 12
     write_buffers    = 16
+   # replacement_policy = FrequencyRP()
 
 class IOCache(Cache):
     assoc = 8

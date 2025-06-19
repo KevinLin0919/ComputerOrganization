@@ -90,3 +90,8 @@ class RRIPRP(BRRIPRP):
 class NRURP(BRRIPRP):
     btp = 0
     max_RRPV = 1
+
+class FrequencyRP(BaseReplacementPolicy):
+    type        = 'FrequencyRP'
+    cxx_class   = 'FrequencyRP'
+    cxx_header  = "mem/cache/replacement_policies/frequency_rp.hh"
