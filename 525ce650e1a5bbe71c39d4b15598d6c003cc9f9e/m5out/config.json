@@ -550,7 +550,7 @@
                         "pid": 100, 
                         "kvmInSE": false, 
                         "cxx_class": "Process", 
-                        "executable": "/home/benchmark/benchmark/multiply", 
+                        "executable": "/home/benchmark/benchmark/quicksort", 
                         "drivers": [], 
                         "system": "system", 
                         "gid": 100, 
@@ -567,7 +567,7 @@
                         "path": "system.cpu.workload", 
                         "name": "workload", 
                         "cmd": [
-                            "/home/benchmark/benchmark/multiply"
+                            "/home/benchmark/benchmark/quicksort"
                         ], 
                         "errout": "cerr", 
                         "useArchPT": false, 
@@ -811,7 +811,7 @@
                 "clk_domain": "system.cpu_clk_domain", 
                 "power_model": [], 
                 "sequential_access": false, 
-                "assoc": 4, 
+                "assoc": 1024, 
                 "warmup_percentage": 0, 
                 "cxx_class": "BaseSetAssoc", 
                 "p_state_clk_gate_max": 1000000000000, 
@@ -835,7 +835,7 @@
             "name": "l3", 
             "p_state_clk_gate_bins": 20, 
             "sequential_access": false, 
-            "assoc": 4
+            "assoc": 1024
         }, 
         "cpu_voltage_domain": {
             "name": "cpu_voltage_domain", 
